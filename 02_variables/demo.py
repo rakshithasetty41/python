@@ -90,3 +90,4 @@ age = 20
 #print("My name is "+name+ " and my age is "+age) # TypeError: can only concatenate str (not "int") to str
 
 # My name is Ravi and my age is 20
+print(f"my name is{name}and my age is{age} and my age is{age+5}")

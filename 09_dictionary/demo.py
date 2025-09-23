@@ -91,3 +91,5 @@ for data in dict_nums:
 print(dir(direct_nums))
 
 
+dict_nu={"one":1,"two":2,"three":3}
+print(dict_nu)

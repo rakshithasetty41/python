@@ -53,7 +53,7 @@ dict_data={"a":"apple","b":"bananana","c":"carrot"}
 print(dict_data)
 #dict_data.get()TypeError: get expected at least 1 argument, got 0
 print(dict_data.get("a"))
-print(dict_data.get("b"))
+print(dict_data.get("d"))
 print(dict_data.get("apple"))#none becuase we cannot get the values 
 
 # keys() : used to get keys 
@@ -63,6 +63,23 @@ print(dict_data.keys())
 only_key = dict_data.keys()
 for key in only_key: 
     print(key)
+
+# values() : used to get values 
+dict_data = {"a":"Apple", "b":"banana"}
+print(dict_data)
+only_values = dict_data.values()
+print(only_values)
+for value in only_values:
+    print(value)
+
+# items() : gets both keys and values
+dict_data = {"a":"Apple", "b":"banana"}
+print(dict_data)
+print(dict_data.items())
+data = dict_data.items()
+for item in data:
+    print(item)
+    print(item[0])
 
 #copy:make a shallow copy
 dict_data={"a":"apple","b":"bananana"}
@@ -98,3 +115,13 @@ print(data)
 data=dict_data.setdefault("c","carrot")
 print(data)
 
+print("======")
+dict_data = {"a":"Apple", "b":"banana"}
+print(dict_data)
+
+data = dict_data.setdefault("b","blueberry")
+print(data)
+
+
+print(dict_data.setdefault("c","cherry"))
+print(dict_data)

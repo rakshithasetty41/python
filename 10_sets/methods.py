@@ -112,7 +112,7 @@ s2={40,50,60,70,80}
 print(s1-s2)
 print(s1.difference(s2))
 print(s2.difference(s1))
-print(s2-s1)\
+print(s2-s1)
 
 print(s1)
 print(s2)

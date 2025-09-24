@@ -13,6 +13,8 @@ print(type(nums_set))
 print(nums_set) #unordered
 
 #print(nums_set[2]) TypeError: 'set' object is not subscriptable
+num_Set={10,20,30,10,40,20,30,40,50,60}
+print(num_Set)
 
 text_set={"one","two","three"}
 print(text_set)

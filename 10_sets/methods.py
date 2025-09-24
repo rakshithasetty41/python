@@ -34,6 +34,8 @@ print(s1)
 #s1.pop(20) TypeError: set.pop() takes no arguments (1 given)
 s1.pop()
 print(s1)
+s1.pop()
+print(s1)
 
 #clear
 s1={10,20,30,40,50}
@@ -44,7 +46,8 @@ print(s1)
 s1={10,20,30,40,50}
 print(s1)
 list1=list(s1)
-print(list1)
+list1.sort()
+print(list1[0])
 
 #copy:
 s1={10,20,30,40,50}
@@ -64,6 +67,7 @@ print(s1)
 s1={10,20,30,40,50}
 print(s1)
 backup=s1
+print(backup is s1)
 print(backup)
 
 backup.pop()

@@ -93,3 +93,6 @@ print(dir(direct_nums))
 
 dict_nu={"one":1,"two":2,"three":3}
 print(dict_nu)
+
+dict={1:"one",2:"two",3:"three",1:"four"}
+print(dict)

@@ -95,4 +95,27 @@ dict_nu={"one":1,"two":2,"three":3}
 print(dict_nu)
 
 dict={1:"one",2:"two",3:"three",1:"four"}
-print(dict)
+print(dict) print("Listing Students Logic")
+        for sid, data in students.items():
+            name = data["name"]
+            scores = data["scores"]
+            
+            avg = sum(scores)/len(scores)
+            high_score = max(scores)
+            low_score = min(scores)
+            
+            skills = data["skills"]
+            skills_count = len(skills)
+            
+            print("="*50)
+            print("STUDENT DETAILS")
+            print("="*50)
+            
+            print(f"ID: {sid}")
+            print(f"NAME: {name}")
+            print(f"ALL SCORES: {scores}")
+            print(f"AVG SCORE: {avg}")
+            print(f"HIGH SCORE: {high_score}")
+            print(f"LOWEST SCORE: {low_score}")
+            print(f"ALL SKILLS: {skills}")
+            print(f"NO OF SKILLS: {skills_count}")

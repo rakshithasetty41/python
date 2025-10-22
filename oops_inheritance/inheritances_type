@@ -1,0 +1,106 @@
+# Types Of Inheritance 
+
+# Single Level Inheritance : -> One Parent -> One Child 
+
+class father:
+    def House(self):
+        print("has house")
+class son(father):
+    def car(Self):
+        print("has a car")
+    
+car_obj=son()
+car_obj.House()
+car_obj.car()
+
+
+print("="*24)
+# Multi Level Inheritance : Parent -> Child -> GrandChild 
+class grandfather:
+    def land(self):
+        print("has a agriculture land")
+
+class father(grandfather):
+    def House(self):
+        print("has house")
+class son(father):
+    def car(Self):
+        print("has a car")
+    
+car_obj=son()
+car_obj.House()
+car_obj.car()
+car_obj.land()
+
+print("="*24)
+
+# Multiple Inheritance : One Child -> Multiple Parents 
+class grandfather:
+    def land(self):
+        print("has a agriculture land")
+
+
+class father(grandfather):
+    def House(self):
+        print("has house")
+
+class mother():
+    def gold(self):
+        print("has a gold")
+
+class son(father,mother):
+    def car(Self):
+        print("has a car")
+    
+car_obj=son()
+car_obj.House()
+car_obj.car()
+car_obj.land()
+car_obj.gold()
+
+print("="*24)
+    
+# Hierarchial Inheritance : One Parent -> Multiple Child
+class father():
+    def House(self):
+        print("has house")
+
+class son(father):
+    def car(Self):
+        print("has a car")
+
+class daughter(father):
+    def shop(self):
+        print("has a business")
+
+
+car_obj=son()
+car_obj.House()
+car_obj.car() 
+
+daughter_obj=daughter()
+daughter_obj.House()
+daughter_obj.shop()
+
+print("="*25)
+# Hybrid Inheritance : Combination or two or more types 
+
+class A:
+    def feat1(self):
+        print("feature1")
+class B(A):
+    def feat2(self):
+        print("feature2")
+class C(A):
+    def feat3(self):
+        print("Feature3")
+class D(B,C):
+    def feat4(Self):
+        print("feature4")
+
+obj=D()
+obj.feat1()
+obj.feat2()
+obj.feat3()
+obj.feat4()
+
